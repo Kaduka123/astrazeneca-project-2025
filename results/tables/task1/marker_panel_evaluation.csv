@@ -1,0 +1,7 @@
+size,objective,r2_loocv,rmse_loocv,panel_name,panel_type,genes_str
+3,minimal_redundancy,0.5904576386133655,77793.3825348538,panel_minimal_redundancy_size3,minimal_redundancy,"ENSCGRG00001007530, Hdlbp, ENSCGRG00001009772"
+5,minimal_redundancy,0.7568367035230519,59943.52132757636,panel_minimal_redundancy_size5,minimal_redundancy,"ENSCGRG00001007530, Hdlbp, ENSCGRG00001009772, Gnas, Parva"
+10,minimal_redundancy,0.766091930249734,58791.67626844105,panel_minimal_redundancy_size10,minimal_redundancy,"ENSCGRG00001007530, Hdlbp, ENSCGRG00001009772, Gnas, Parva, ENSCGRG00001023575, Actg1, ND4L, ENSCGRG00001004990, Akr1b1"
+3,max_score,0.764091354228432,59042.5585865579,panel_max_score_size3,max_score,"ENSCGRG00001007530, Hdlbp, Parva"
+5,max_score,0.8203859093797248,51518.5275939604,panel_max_score_size5,max_score,"ENSCGRG00001007530, Hdlbp, Parva, Cd164, Cap1"
+10,max_score,0.7857013864106083,56273.3696013557,panel_max_score_size10,max_score,"ENSCGRG00001007530, Hdlbp, Parva, Cd164, Cap1, ATP6, AKR1A1, Akr1b1, Actr1a, Mtch1"

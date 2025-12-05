@@ -1,0 +1,2 @@
+model_type,cv_r2_mean,cv_r2_std,test_r2,test_rmse,n_features,n_samples,feature_names,target
+ensemble,0.5860652405445215,0.00983861450961547,0.6271804352263792,0.12751648532868207,8,9773,"['UTR5_GC', 'UTR3_GC', 'UTR3_length', 'miRNA_seed_matches', 'UTR5_length', 'CAI', 'GC3_content', 'UTR5_AUG_count']",cv

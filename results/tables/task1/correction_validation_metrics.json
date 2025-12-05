@@ -1,0 +1,8 @@
+{
+    "silhouette_before": 0.15701524829988037,
+    "silhouette_after": -0.02838931689532359,
+    "knn_mixing_rate_before": 0.7708333333333333,
+    "knn_mixing_rate_after": 0.6174999999999999,
+    "ks_prop_diff_before": 0.5544476176646175,
+    "ks_prop_diff_after": 0.3812866063217
+}

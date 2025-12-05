@@ -1,0 +1,14 @@
+├── 3UTR_sequences.fasta
+	3’UTR of the protein coding transcripts derived by ensembl	
+
+├── 5UTR_sequences.fasta
+	5’UTR of the protein coding transcripts derived by ensembl
+
+├── CDS_sequences.fasta
+	Coding sequence part of the protein coding transcripts derived by ensembl
+
+├── expression.txt
+	Tab separated file reporting the expression values of the transcripts in transcript per million (TPM). Genes are reported in rows and samples are reported in columns	
+
+├── MANIFEST.txt
+	Tab separated file reporting the information on each sample derived by SRA

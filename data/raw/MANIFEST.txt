@@ -1,0 +1,81 @@
+Experiment	Sample	description
+SRP073484	SRR3401749	Illumina HiSeq 2000 sequencing: RNA-Seq of CHO cell: CHO DG44 IgG producing cells in exponential growth phase
+SRP073484	SRR3401751	Illumina HiSeq 2000 sequencing: RNA-Seq of CHO cell: DG44 IgG producing cells treated with NaBu 48h after seeding
+SRP073484	SRR3401745	Illumina HiSeq 2000 sequencing: RNA-Seq of CHO cell: CHO-K1 cells in exponential growth phase
+SRP073484	SRR3401747	Illumina HiSeq 2000 sequencing: RNA-Seq of CHO cell: CHO DG44 IgG producing cells in exponential growth phase
+SRP073484	SRR3401746	Illumina HiSeq 2000 sequencing: RNA-Seq of CHO cell:CHO-K1 cells in stationary cultivation phase
+SRP073484	SRR3401748	Illumina HiSeq 2000 sequencing: RNA-Seq of CHO cell: CHO DG44 IgG producing cells in stationary cultivation phase
+SRP073484	SRR3401750	Illumina HiSeq 2000 sequencing: RNA-Seq of CHO cell: CHO DG44 IgG producing cells in stationary cultivation phase
+SRP073484	SRR3401752	Illumina HiSeq 2000 sequencing: RNA-Seq of CHO cell: CHO DG44 IgG producing cells treated with NaBu 48h after seeding
+PRJEB48931	ERR7417863	Illumina HiSeq 4000 sequencing: RNAseq of two recombinant CHO cell lines differing only in the factor produced monoclonal antibody
+PRJEB48931	ERR7417867	Illumina HiSeq 4000 sequencing: RNAseq of two recombinant CHO cell lines differing only in the factor produced monoclonal antibody
+PRJEB48931	ERR7417864	Illumina HiSeq 4000 sequencing: RNAseq of two recombinant CHO cell lines differing only in the factor produced monoclonal antibody
+PRJEB48931	ERR7417870	Illumina HiSeq 4000 sequencing: RNAseq of two recombinant CHO cell lines differing only in the factor produced monoclonal antibody
+PRJEB48931	ERR7417865	Illumina HiSeq 4000 sequencing: RNAseq of two recombinant CHO cell lines differing only in the factor produced monoclonal antibody
+PRJEB48931	ERR7417866	Illumina HiSeq 4000 sequencing: RNAseq of two recombinant CHO cell lines differing only in the factor produced monoclonal antibody
+PRJEB48931	ERR7417869	Illumina HiSeq 4000 sequencing: RNAseq of two recombinant CHO cell lines differing only in the factor produced monoclonal antibody
+PRJEB48931	ERR7417868	Illumina HiSeq 4000 sequencing: RNAseq of two recombinant CHO cell lines differing only in the factor produced monoclonal antibody
+SRP413864	SRR22810193	Illumina NovaSeq 6000 sequencing: GSM6858193: Ctrl2 Cricetulus griseus RNA-Seq
+SRP413864	SRR22810194	Illumina NovaSeq 6000 sequencing: GSM6858192: Ctrl1 Cricetulus griseus RNA-Seq
+SRP413864	SRR22810191	Illumina NovaSeq 6000 sequencing: GSM6858195: siXBP1_1 Cricetulus griseus RNA-Seq
+SRP413864	SRR22810192	Illumina NovaSeq 6000 sequencing: GSM6858194: Ctrl3 Cricetulus griseus RNA-Seq
+SRP413864	SRR22810189	Illumina NovaSeq 6000 sequencing: GSM6858197: siXBP1_3 Cricetulus griseus RNA-Seq
+SRP413864	SRR22810190	Illumina NovaSeq 6000 sequencing: GSM6858196: siXBP1_2 Cricetulus griseus RNA-Seq
+PRJNA599947	SRR11184908	Illumina NovaSeq 6000 sequencing: RNA-Seq of Cricetulus griseus: treatment group (10mM NH3 addition), day 6
+PRJNA599947	SRR11184909	Illumina NovaSeq 6000 sequencing: RNA-Seq of Cricetulus griseus: treatment group (10mM NH3 addition), day 6
+PRJNA599947	SRR11184911	Illumina NovaSeq 6000 sequencing: RNA-Seq of Cricetulus griseus: control group (0mM NH3 addition), day 6
+PRJNA599947	SRR11184915	Illumina NovaSeq 6000 sequencing: RNA-Seq of Cricetulus griseus: treatment group (10mM NH3 addition), day 9
+PRJNA599947	SRR11184916	Illumina NovaSeq 6000 sequencing: RNA-Seq of Cricetulus griseus: treatment group (10mM NH3 addition), day 9
+PRJNA599947	SRR11184910	Illumina NovaSeq 6000 sequencing: RNA-Seq of Cricetulus griseus: control group (0mM NH3 addition), day 6
+PRJNA599947	SRR11184912	Illumina NovaSeq 6000 sequencing: RNA-Seq of Cricetulus griseus: treatment group (10mM NH3 addition), day 3
+PRJNA599947	SRR11184917	Illumina NovaSeq 6000 sequencing: RNA-Seq of Cricetulus griseus: control group (0mM NH3 addition), day 3
+PRJNA599947	SRR11184918	Illumina NovaSeq 6000 sequencing: RNA-Seq of Cricetulus griseus: control group (0mM NH3 addition), day 9
+PRJNA599947	SRR11184913	Illumina NovaSeq 6000 sequencing: RNA-Seq of Cricetulus griseus: treatment group (10mM NH3 addition), day 3
+PRJNA599947	SRR11184914	Illumina NovaSeq 6000 sequencing: RNA-Seq of Cricetulus griseus: control group (0mM NH3 addition), day 3
+PRJNA599947	SRR11184919	Illumina NovaSeq 6000 sequencing: RNA-Seq of Cricetulus griseus: control group (0mM NH3 addition), day 9
+PRJNA599947	SRR11184920	Illumina NovaSeq 6000 sequencing: RNA-Seq of Cricetulus griseus: control group (0mM NH3 addition), day 0
+PRJNA599947	SRR11184921	Illumina NovaSeq 6000 sequencing: RNA-Seq of Cricetulus griseus: control group (0mM NH3 addition), day 0
+PRJNA593052	SRR10572658	NextSeq 500 sequencing: RNA-Seq of CHOK1 cell line
+PRJNA593052	SRR10572659	NextSeq 500 sequencing: RNA-Seq of CHOK1 cell line
+PRJNA593052	SRR10572660	NextSeq 500 sequencing: RNA-Seq of CHOK1 cell line
+PRJNA593052	SRR10572663	NextSeq 500 sequencing: RNA-Seq of CHOK1 cell line
+PRJNA593052	SRR10572664	NextSeq 500 sequencing: RNA-Seq of CHOK1 cell line
+PRJNA593052	SRR10572657	NextSeq 500 sequencing: RNA-Seq of CHOK1 cell line
+PRJNA593052	SRR10572661	NextSeq 500 sequencing: RNA-Seq of CHOK1 cell line
+PRJNA593052	SRR10572662	NextSeq 500 sequencing: RNA-Seq of CHOK1 cell line
+PRJNA318741	SRR3401399	Illumina HiSeq 2000 paired end sequencing; Illumina HiSeq 2000 sequencing: RNA-Seq of CHO cell: CHO-K1 cells in exponential growth phase
+PRJNA318741	SRR3401401	Illumina HiSeq 2000 paired end sequencing; Illumina HiSeq 2000 sequencing: RNA-Seq of CHO cell: CHO-K1 cells in stationary cultivation phase
+PRJNA393479	SRR5812574	Illumina HiSeq 2500 sequencing: GSM2696089: Subclone HP biological replicate 3 Cricetulus griseus RNA-Seq
+PRJNA393479	SRR5812577	Illumina HiSeq 2500 sequencing: GSM2696090: Subclone LP biological replicate 1 Cricetulus griseus RNA-Seq
+PRJNA393479	SRR5812581	Illumina HiSeq 2500 sequencing: GSM2696092: Subclone LP biological replicate 3 Cricetulus griseus RNA-Seq
+PRJNA393479	SRR5812564	Illumina HiSeq 2000 sequencing: GSM2696081: HP biological replicate 1 Cricetulus griseus RNA-Seq
+PRJNA393479	SRR5812565	Illumina HiSeq 2000 sequencing: GSM2696082: HP biological replicate 2 Cricetulus griseus RNA-Seq
+PRJNA393479	SRR5812569	Illumina HiSeq 2000 sequencing: GSM2696086: LP biological replicate 3 Cricetulus griseus RNA-Seq
+PRJNA393479	SRR5812580	Illumina HiSeq 2500 sequencing: GSM2696092: Subclone LP biological replicate 3 Cricetulus griseus RNA-Seq
+PRJNA393479	SRR5812570	Illumina HiSeq 2500 sequencing: GSM2696087: Subclone HP biological replicate 1 Cricetulus griseus RNA-Seq
+PRJNA393479	SRR5812573	Illumina HiSeq 2500 sequencing: GSM2696088: Subclone HP biological replicate 2 Cricetulus griseus RNA-Seq
+PRJNA393479	SRR5812575	Illumina HiSeq 2500 sequencing: GSM2696089: Subclone HP biological replicate 3 Cricetulus griseus RNA-Seq
+PRJNA393479	SRR5812576	Illumina HiSeq 2500 sequencing: GSM2696090: Subclone LP biological replicate 1 Cricetulus griseus RNA-Seq
+PRJNA393479	SRR5812578	Illumina HiSeq 2500 sequencing: GSM2696091: Subclone LP biological replicate 2 Cricetulus griseus RNA-Seq
+PRJNA393479	SRR5812579	Illumina HiSeq 2500 sequencing: GSM2696091: Subclone LP biological replicate 2 Cricetulus griseus RNA-Seq
+PRJNA393479	SRR5812566	Illumina HiSeq 2000 sequencing: GSM2696083: HP biological replicate 3 Cricetulus griseus RNA-Seq
+PRJNA393479	SRR5812571	Illumina HiSeq 2500 sequencing: GSM2696087: Subclone HP biological replicate 1 Cricetulus griseus RNA-Seq
+PRJNA393479	SRR5812567	Illumina HiSeq 2000 sequencing: GSM2696084: LP biological replicate 1 Cricetulus griseus RNA-Seq
+PRJNA393479	SRR5812568	Illumina HiSeq 2000 sequencing: GSM2696085: LP biological replicate 2 Cricetulus griseus RNA-Seq
+PRJNA393479	SRR5812572	Illumina HiSeq 2500 sequencing: GSM2696088: Subclone HP biological replicate 2 Cricetulus griseus RNA-Seq
+PRJNA820638	SRR18502223	NextSeq 550 sequencing: GSM5974767: CHO 42.5°C_1h_D4 Cricetulus griseus RNA-Seq
+PRJNA820638	SRR18502227	NextSeq 550 sequencing: GSM5974763: CHO 40°C_6h_D3 Cricetulus griseus RNA-Seq
+PRJNA820638	SRR18502237	NextSeq 550 sequencing: GSM5974753: CHO Ctrl_B1 Cricetulus griseus RNA-Seq
+PRJNA820638	SRR18502228	NextSeq 550 sequencing: GSM5974762: CHO 40°C_6h_C3 Cricetulus griseus RNA-Seq
+PRJNA820638	SRR18502231	NextSeq 550 sequencing: GSM5974759: CHO 40°C_1h_D2 Cricetulus griseus RNA-Seq
+PRJNA820638	SRR18502232	NextSeq 550 sequencing: GSM5974758: CHO 40°C_1h_C2 Cricetulus griseus RNA-Seq
+PRJNA820638	SRR18502238	NextSeq 550 sequencing: GSM5974752: CHO Ctrl_A1 Cricetulus griseus RNA-Seq
+PRJNA820638	SRR18502234	NextSeq 550 sequencing: GSM5974756: CHO 40°C_1h_A2 Cricetulus griseus RNA-Seq
+PRJNA820638	SRR18502235	NextSeq 550 sequencing: GSM5974755: CHO Ctrl_D1 Cricetulus griseus RNA-Seq
+PRJNA820638	SRR18502236	NextSeq 550 sequencing: GSM5974754: CHO Ctrl_C1 Cricetulus griseus RNA-Seq
+PRJNA820638	SRR18502224	NextSeq 550 sequencing: GSM5974766: CHO 42.5°C_1h_C4 Cricetulus griseus RNA-Seq
+PRJNA820638	SRR18502225	NextSeq 550 sequencing: GSM5974765: CHO 42.5°C_1h_B4 Cricetulus griseus RNA-Seq
+PRJNA820638	SRR18502226	NextSeq 550 sequencing: GSM5974764: CHO 42.5°C_1h_A4 Cricetulus griseus RNA-Seq
+PRJNA820638	SRR18502229	NextSeq 550 sequencing: GSM5974761: CHO 40°C_6h_B3 Cricetulus griseus RNA-Seq
+PRJNA820638	SRR18502230	NextSeq 550 sequencing: GSM5974760: CHO 40°C_6h_A3 Cricetulus griseus RNA-Seq
+PRJNA820638	SRR18502233	NextSeq 550 sequencing: GSM5974757: CHO 40°C_1h_B2 Cricetulus griseus RNA-Seq

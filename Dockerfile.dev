@@ -1,0 +1,48 @@
+# Dockerfile.dev
+FROM python:3.11-slim
+
+# Install system dependencies
+RUN apt-get update && apt-get install -y \
+    build-essential \
+    gcc \
+    g++ \
+    gfortran \
+    libopenblas-dev \
+    pkg-config \
+    git \
+    zlib1g-dev \
+    libffi-dev \
+    libzmq3-dev \
+    libblas-dev \
+    liblapack-dev \
+    curl \
+    shellcheck \
+    # Cleanup to reduce image size
+    && apt-get clean \
+    && rm -rf /var/lib/apt/lists/*
+
+# Create a non-root user for development with sudo access
+RUN useradd -m -s /bin/bash vscode \
+    && mkdir -p /workspaces/mini-project && chown -R vscode:vscode /workspaces
+
+# Set environment variables
+ENV PYTHONPATH=/workspaces/mini-project
+ENV CFLAGS="-fpermissive -w"
+ENV CXXFLAGS="-fpermissive -w"
+
+# Switch to the vscode user
+USER vscode
+
+# Install Poetry - MUST happen before trying to configure it
+RUN curl -sSL https://install.python-poetry.org | python3 - --version 1.7.1
+ENV PATH="/home/vscode/.local/bin:${PATH}"
+ENV POETRY_CACHE_DIR=/home/vscode/.cache/poetry
+
+# NOW configure Poetry (AFTER installation)
+RUN poetry config virtualenvs.in-project true
+
+# Set up working directory
+WORKDIR /workspaces/mini-project
+
+# We'll install dependencies when the container starts
+CMD ["bash", "-c", "if [ -f pyproject.toml ]; then echo 'Installing dependencies...' && poetry install --with dev && echo 'Dependencies installed!'; fi && bash"]

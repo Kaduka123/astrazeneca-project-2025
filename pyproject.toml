@@ -1,0 +1,236 @@
+# pyproject.toml
+
+# --------------------------------------------
+# Project Def
+# --------------------------------------------
+[tool.poetry]
+name = "cho-analysis"
+version = "0.1.0"
+description = "Analysis of gene expression in CHO cell lines for marker identification and sequence feature characterization"
+authors = ["Group T29"]
+readme = "README.md"
+packages = [{include = "cho_analysis"}]
+license = "MIT"
+
+# --------------------------------------------
+# Main
+# --------------------------------------------
+[tool.poetry.dependencies]
+# --- Runtime Dependencies ---
+python = ">=3.11,<3.13"
+python-dotenv = "^1.0.0"
+
+# --- Core Data Science & Numerics ---
+# Note: Versions pinned for inmoose compatibility (flimsy package)
+pandas = "=2.2.3"
+numpy = "=1.26.4"
+scipy = "=1.15.2"
+scikit-learn = "=1.6.1"
+
+# --- Bioinformatics & Specific Libraries ---
+inmoose = "0.7.3"
+harmonypy = "0.0.5"
+scanpy = "^1.9.0"
+statsmodels = "=0.14.4"
+biopython = "^1.81"
+
+# --- Visualization ---
+# Note: Versions pinned for inmoose compatibility
+matplotlib = "=3.10.1"
+seaborn = "=0.13.2"
+matplotlib-venn = "^0.11.9"
+
+# --- Jupyter Environment ---
+ipykernel = "^6.29.0"
+ipywidgets = "^8.1.0"
+jupyter = "^1.0.0"
+jupyterlab = "^4.0.0"
+notebook = "^7.0.0"
+
+# --- Utilities ---
+coloredlogs = "^15.0.1"
+rich = "^14.0.0"
+
+# --------------------------------------------
+# Dev Group
+# --------------------------------------------
+[tool.poetry.group.dev.dependencies]
+# --- Development & CI Tools ---
+ruff = "^0.5.0"
+mypy = "^1.10.0"
+pytest = "^8.0.0"
+pytest-cov = "^5.0.0"
+pre-commit = "^3.6.0"
+pytest-mock = "^3.14.0"
+flake8 = "^7.2.0"
+flake8-docstrings = "^1.7.0"
+
+# --- Type Stubs for Mypy ---
+pandas-stubs = "^2.0"
+types-pytz = "^2024.1.0"
+types-PyYAML = "^6.0.12"
+types-seaborn = "^0.13.0"
+
+# --------------------------------------------
+# ML Group
+# --------------------------------------------
+[tool.poetry.group.ml]
+optional = true
+
+[tool.poetry.group.ml.dependencies]
+# --- Machine Learning / Sequence Analysis ---
+transformers = "^4.30.0"
+torch = "^2.0.0"
+accelerate = "^0.30.0"
+nltk = "^3.8.1"
+python-crfsuite = "^0.9.9"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+# --------------------------------------------
+# Ruff Config
+# --------------------------------------------
+[tool.ruff]
+target-version = "py312" # Match python constraint
+line-length = 100
+exclude = [
+    ".bzr",
+    ".direnv",
+    ".eggs",
+    ".git",
+    ".hg",
+    ".mypy_cache",
+    ".nox",
+    ".pants.d",
+    ".pytype",
+    ".ruff_cache",
+    ".svn",
+    ".tox",
+    ".venv",
+    "__pypackages__",
+    "_build",
+    "buck-out",
+    "build",
+    "dist",
+    "node_modules",
+    "venv",
+    "*.pyi",
+]
+
+[tool.ruff.lint]
+select = [
+    "E",
+    "F",
+    "W",
+    "C90",
+    "I",
+    "N",
+    "D",
+    "UP",
+    "B",
+    "A",
+    "C4",
+    "DTZ",
+    "T10",
+    "EM",
+    "ISC",
+    "ICN",
+    "G",
+    "PIE",
+    "T20",
+    "PYI",
+    "PT",
+    "Q",
+    "RSE",
+    "RET",
+    "SLF",
+    "SIM",
+    "TID",
+    "ARG",
+    "PTH",
+    "PGH",
+    "PLC",
+    "PLE",
+    "PLR",
+    "PLW",
+    "TRY",
+    "RUF"
+    ]
+
+ignore = [
+    "E501",
+    "B008",
+    "C901",
+    "D100",
+    "D101",
+    "D102",
+    "D103",
+    "D104",
+    "D105",
+    "D106",
+    "D107",
+    "PLR0913",
+    "PLR0915",
+    "PLR2004",
+    "TRY003",
+    "G004"
+    ]
+
+dummy-variable-rgx = "^(_+|(_+[a-zA-Z0-9_]*[a-zA-Z0-9]+?))$"
+
+[tool.ruff.lint.pydocstyle]
+convention = "google"
+
+[tool.ruff.format]
+quote-style = "double"
+indent-style = "space"
+skip-magic-trailing-comma = false
+line-ending = "auto"
+
+[tool.ruff.lint.isort]
+known-first-party = [
+    "cho_analysis",
+    "tests"
+    ]
+
+# --------------------------------------------
+# Mypy Config
+# --------------------------------------------
+[tool.mypy]
+python_version = "3.12" # Match python constraint
+warn_return_any = true
+warn_unused_configs = true
+ignore_missing_imports = true
+exclude = [
+    "build/",
+    "dist/",
+    "venv/",
+    ".venv/",
+]
+
+# --------------------------------------------
+# Pytest Config
+# --------------------------------------------
+[tool.pytest.ini_options]
+minversion = "6.0"
+addopts = "-ra -q --cov=cho_analysis --cov-report=term-missing"
+testpaths = ["tests"]
+python_files = "test_*.py"
+python_classes = "Test*"
+python_functions = "test_*"
+log_cli = true
+log_level = "INFO"
+
+# --------------------------------------------
+# Converage Config
+# --------------------------------------------
+[tool.coverage.run]
+branch = true
+source = ["cho_analysis"]
+omit = ["*/__main__.py"]
+
+[tool.coverage.report]
+show_missing = true
+fail_under = 70

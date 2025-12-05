@@ -1,0 +1,16 @@
+// .vscode/extensions.json
+// Recommends extensions for the HOST machine.
+// Primarily used to guide users into the Dev Container.
+{
+  "recommendations": [
+    // Essential: The core extension for Dev Containers
+    "ms-vscode-remote.remote-containers",
+
+    // Useful for ensuring consistent editor settings via .editorconfig
+    // "EditorConfig.EditorConfig"
+  ],
+  "unwantedRecommendations": [
+    // You can list extensions here that might auto-recommend but you don't want
+    // e.g., if Docker extension recommends something conflicting.
+  ]
+}

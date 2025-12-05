@@ -1,0 +1,28 @@
+{
+  "general": [
+    "Design a 5' UTR with optimal length and GC content to ensure efficient translation initiation",
+    "Optimize codon usage based on CHO-specific preferences while maintaining moderate GC content",
+    "Include a 3' UTR with appropriate stability elements to ensure mRNA longevity"
+  ],
+  "5UTR": [
+    "Keep 5' UTR length between 0 and 191 nucleotides",
+    "Maintain 5' UTR GC content between 28.6% and 67.1%",
+    "Include a strong Kozak consensus sequence (GCCACC) around the start codon"
+  ],
+  "CDS": [
+    "Target a Codon Adaptation Index (CAI) of approximately 0.56",
+    "Maintain GC content at the third codon position (GC3) between 0.0% and 67.4%"
+  ],
+  "3UTR": [
+    "Design 3' UTR with length between 0 and 1055 nucleotides",
+    "Maintain 3' UTR GC content between 28.6% and 42.6%",
+    "Include at least one canonical polyadenylation signal (AATAAA) in the 3' UTR"
+  ],
+  "priority": [
+    "Codon optimization to achieve target CAI",
+    "Design a 5' UTR with optimal length and GC content to ensure efficient translation initiation",
+    "Optimize codon usage based on CHO-specific preferences while maintaining moderate GC content",
+    "Include a 3' UTR with appropriate stability elements to ensure mRNA longevity",
+    "Keep 5' UTR length between 0 and 191 nucleotides"
+  ]
+}

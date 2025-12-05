@@ -1,0 +1,314 @@
+// .devcontainer/devcontainer.json
+{
+    "name": "CHO Analysis Development Environment",
+    "build": {
+        "dockerfile": "../Dockerfile.dev",
+        "context": ".."
+    },
+    // --- Features ---
+    "features": {
+        "ghcr.io/devcontainers/features/git:1": {},
+        "ghcr.io/devcontainers/features/github-cli:1": {}
+    },
+    // --- VS Code Customizations (Settings & Extensions) ---
+    "customizations": {
+        "vscode": {
+            "settings": {
+                // --- Editor Behavior & Style ---
+                "editor.tabSize": 4,
+                "editor.insertSpaces": true,
+                "editor.detectIndentation": false,
+                "editor.suggestSelection": "first",
+                "editor.bracketPairColorization.enabled": true,
+                "editor.guides.bracketPairs": "active",
+                "editor.rulers": [
+                    100
+                ],
+                "editor.linkedEditing": true,
+                "editor.suggest.insertMode": "replace",
+                "editor.inlineSuggest.enabled": true,
+                "editor.codeLens": true,
+                "editor.unicodeHighlight.ambiguousCharacters": true,
+                "editor.unicodeHighlight.invisibleCharacters": true,
+                // --- UI Preferences ---
+                "editor.fontFamily": "'Fira Code', 'JetBrains Mono', Menlo, Monaco, 'Courier New', monospace",
+                "editor.fontLigatures": true,
+                "editor.fontSize": 14,
+                "editor.lineHeight": 1.6,
+                "editor.wordWrap": "on",
+                "editor.minimap.enabled": true,
+                "editor.cursorBlinking": "smooth",
+                "editor.cursorSmoothCaretAnimation": "on",
+                "editor.smoothScrolling": true,
+                "editor.guides.bracketPairsHorizontal": true,
+                "editor.bracketPairColorization.independentColorPoolPerBracketType": true,
+                "workbench.colorTheme": "Tokyo Night",
+                "workbench.iconTheme": "material-icon-theme",
+                "workbench.editor.labelFormat": "short",
+                "workbench.editor.limit.enabled": true,
+                "workbench.editor.limit.value": 15,
+                "explorer.compactFolders": true,
+                "errorlens.fontStyleItalic": true,
+                "errorlens.margin": "20ch",
+                // --- Files & Search ---
+                "files.encoding": "utf8",
+                "files.eol": "\n",
+                "files.insertFinalNewline": true,
+                "files.trimTrailingWhitespace": true,
+                "files.exclude": {
+                    "**/.git": true,
+                    "**/.svn": true,
+                    "**/.hg": true,
+                    "**/CVS": true,
+                    "**/.DS_Store": true,
+                    "**/Thumbs.db": true,
+                    "**/__pycache__": true,
+                    "**/.pytest_cache": true,
+                    "**/.mypy_cache": true,
+                    "**/.ruff_cache": true,
+                    "**/*.pyc": true,
+                    "**/.venv": true,
+                    "**/dist": true,
+                    "**/build": true
+                },
+                "files.watcherExclude": {
+                    "**/.git/objects/**": true,
+                    "**/.git/subtree-cache/**": true,
+                    "**/node_modules/*/**": true,
+                    "**/.hg/store/**": true,
+                    "**/__pycache__": true,
+                    "**/.pytest_cache": true,
+                    "**/.mypy_cache": true,
+                    "**/.ruff_cache": true
+                },
+                "search.exclude": {
+                    "**/.git": true,
+                    "**/.venv": true,
+                    "**/__pycache__": true,
+                    "**/.pytest_cache": true,
+                    "**/.mypy_cache": true,
+                    "**/.ruff_cache": true,
+                    "**/dist": true,
+                    "**/build": true,
+                    "**/node_modules": true,
+                    "**/bower_components": true,
+                    "**/*.code-search": true,
+                    "**/*.egg-info": true
+                },
+                // --- Python Specific Settings ---
+                "python.defaultInterpreterPath": "/usr/local/bin/python",
+                "python.analysis.typeCheckingMode": "basic",
+                "python.analysis.autoImportCompletions": true,
+                "python.analysis.indexing": true,
+                "python.analysis.inlayHints.functionReturnTypes": true,
+                "python.analysis.inlayHints.variableTypes": true,
+                // --- Linting & Formatting ---
+                "python.linting.enabled": true,
+                "python.linting.mypyEnabled": true,
+                "python.linting.ruffEnabled": true,
+                "python.formatting.provider": "ruff",
+                "editor.formatOnSave": false,
+                "editor.codeActionsOnSave": {},
+                "[python]": {
+                    "editor.defaultFormatter": "charliermarsh.ruff",
+                    "editor.formatOnSave": false,
+                    "editor.codeActionsOnSave": {
+                        "source.fixAll": "explicit",
+                        "source.organizeImports": "explicit"
+                    }
+                },
+                "[markdown]": {
+                    "editor.formatOnSave": false,
+                    "files.trimTrailingWhitespace": false
+                },
+                // --- Bash/Shell Script Settings ---
+                "[shellscript]": {
+                    "editor.defaultFormatter": "foxundermoon.shell-format",
+                    "editor.formatOnSave": true,
+                    "editor.codeActionsOnSave": {
+                        "source.fixAll.shellcheck": true
+                    }
+                },
+                "shellcheck.enable": true,
+                "shellcheck.enableQuickFix": true,
+                "shellcheck.run": "onSave",
+                "shellcheck.executablePath": "shellcheck",
+                "shellFormat.flag": "-i 4 -ci -ln bash",
+                "shellformat.effectLanguages": [
+                    "shellscript",
+                    "dockerfile",
+                    "dotenv",
+                    "hosts",
+                    "jvmoptions",
+                    "ignore",
+                    "gitignore",
+                    "properties",
+                    "spring-boot-properties",
+                    "azcli"
+                ],
+                // Ruff extension settings
+                "ruff.importStrategy": "fromEnvironment",
+                "ruff.path": [
+                    "${workspaceFolder}/.venv/bin/ruff"
+                ],
+                // --- Additional Python Data Science Settings ---
+                "python.analysis.autoSearchPaths": true,
+                "python.analysis.extraPaths": [
+                    "."
+                ],
+                "python.analysis.diagnosticMode": "workspace",
+                "python.analysis.completeFunctionParens": true,
+                "python.analysis.packageIndexDepths": [
+                    {
+                        "name": "pandas",
+                        "depth": 2
+                    },
+                    {
+                        "name": "matplotlib",
+                        "depth": 2
+                    },
+                    {
+                        "name": "numpy",
+                        "depth": 2
+                    },
+                    {
+                        "name": "sklearn",
+                        "depth": 2
+                    },
+                    {
+                        "name": "scipy",
+                        "depth": 2
+                    },
+                    {
+                        "name": "seaborn",
+                        "depth": 2
+                    }
+                ],
+                "python.dataScience.allowImportFromNotebook": true,
+                // --- Jupyter Settings ---
+                "jupyter.interactiveWindow.creationMode": "perFile",
+                "jupyter.interactiveWindow.textEditor.executeSelection": true,
+                "jupyter.interactiveWindow.displayTheme": "match editor",
+                "jupyter.disableJupyterAutoStart": false,
+                "jupyter.exportWithOutputEnabled": true,
+                "jupyter.notebookHoverNavigation.enabled": true,
+                "jupyter.variableViewScope": "global",
+                "jupyter.plotlySendEventsWithSave": true,
+                "jupyter.widgetScriptSources": [
+                    "jsdelivr.com",
+                    "unpkg.com"
+                ],
+                "jupyter.interactiveWindowMode": "perFile",
+                "jupyter.pythonExportMethod": "direct",
+                "notebook.cellToolbarLocation": {
+                    "default": "right",
+                    "jupyter-notebook": "right"
+                },
+                "notebook.cellFocusIndicator": "border",
+                "notebook.focusIndicator": "gutter",
+                "notebook.lineNumbers": "on",
+                "notebook.compactView": false,
+                "notebook.outline.showCodeCells": true,
+                "notebook.diff.ignoreMetadata": true,
+                "notebook.output.scrolling": true,
+                "notebook.formatOnSave.enabled": false,
+                "notebook.output.textLineLimit": 1000,
+                // --- CodeLens  Settings ---
+                "gitlens.codeLens.enabled": true,
+                "gitlens.currentLine.enabled": true,
+                "gitlens.hovers.currentLine.over": "line",
+                // --- Spell Checker ---
+                "cSpell.customDictionaries": {
+                    "project-dictionary": {
+                        "name": "project-dictionary",
+                        "path": "${workspaceFolder}/.vscode/dictionary.txt",
+                        "addWords": true,
+                        "scope": "workspace"
+                    }
+                },
+                "cSpell.dictionaries": [
+                    "project-dictionary"
+                ],
+                // --- Terminal ---
+                "terminal.integrated.defaultProfile.linux": "bash",
+                "terminal.integrated.cursorBlinking": true,
+                "terminal.integrated.smoothScrolling": true,
+                // --- Testing ---
+                "python.testing.pytestEnabled": true,
+                "python.testing.unittestEnabled": false,
+                "python.testing.nosetestsEnabled": false,
+                "python.testing.pytestArgs": [
+                    "tests"
+                ],
+                // --- Git ---
+                "git.enableSmartCommit": true,
+                "git.confirmSync": false,
+                "git.autofetch": true,
+                // --- Workbench & Panel Configuration ---
+                "workbench.panel.defaultLocation": "bottom",
+                "workbench.panel.opensMaximized": "always",
+                "workbench.startupEditor": "none",
+                "problems.autoReveal": true,
+                "problems.showCurrentInStatus": true
+            },
+            // --- Extensions Installed Inside Container ---
+            "extensions": [
+                // Core Python Development
+                "ms-python.python",
+                "ms-python.vscode-pylance",
+                "charliermarsh.ruff",
+                "ms-python.mypy-type-checker",
+                // Data Science & Jupyter
+                "ms-toolsai.jupyter",
+                "ms-toolsai.jupyter-renderers",
+                "ms-toolsai.jupyter-keymap",
+                "ms-toolsai.vscode-jupyter-slideshow",
+                "ms-toolsai.vscode-jupyter-cell-tags",
+                "hediet.vscode-drawio", // For diagram creation
+                "mechatroner.rainbow-csv", // Better CSV viewing
+                "grapecity.gc-excelviewer", // Excel file viewer
+                // Docker
+                "ms-azuretools.vscode-docker",
+                // Version Control & Collaboration
+                "eamodio.gitlens",
+                "github.vscode-pull-request-github",
+                // Bash/Shell Script Development
+                "timonwong.shellcheck",
+                "mads-hartmann.bash-ide-vscode",
+                "rogalmic.bash-debug",
+                "foxundermoon.shell-format",
+                // Editor Enhancements
+                "streetsidesoftware.code-spell-checker",
+                "visualstudioexptteam.vscodeintellicode",
+                "wayou.vscode-todo-highlight",
+                // Additional Extensions
+                "aaron-bond.better-comments",
+                "bierner.markdown-mermaid",
+                "christian-kohler.path-intellisense",
+                "davidanson.vscode-markdownlint",
+                "editorconfig.editorconfig",
+                "github.vscode-github-actions",
+                "redhat.vscode-yaml",
+                "yzhang.markdown-all-in-one",
+                "gruntfuggly.todo-tree",
+                "arrterian.nix-env-selector",
+                "tamasfe.even-better-toml",
+                "njpwerner.autodocstring",
+                "kevinrose.vsc-python-indent",
+                "enkia.tokyo-night",
+                "pkief.material-icon-theme",
+                "mikestead.dotenv" // For dotenv file support
+            ]
+        }
+    },
+    // --- Container Lifecycle & Networking ---
+    "forwardPorts": [
+        8888
+    ], // Jupyter Notebook port
+    "remoteUser": "vscode",
+    "mounts": [
+        "source=${localWorkspaceFolder}/data,target=/app/data,type=bind,consistency=cached",
+        "source=${localWorkspaceFolder}/results,target=/app/results,type=bind,consistency=cached"
+    ],
+    "postStartCommand": "echo '{\"view\": \"problems\"}' > /tmp/vscode-panel && sleep 2 && touch /tmp/vscode-refresh"
+}

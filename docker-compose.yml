@@ -1,0 +1,14 @@
+# docker-compose.yml
+services:
+  analysis:
+    build:
+      context: .
+      dockerfile: docker/Dockerfile
+    image: cho-analysis-app
+    volumes:
+      - ./logs:/app/logs
+      - ./results:/app/results
+      - ./data:/app/data
+      - ./experiments.toml:/app/experiments.toml
+    env_file:
+      - .env
